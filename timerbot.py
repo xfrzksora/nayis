@@ -25,6 +25,9 @@ import logging
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
+from pycoingecko import CoinGeckoAPI
+cg = CoinGeckoAPI()
+
 # Enable logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
